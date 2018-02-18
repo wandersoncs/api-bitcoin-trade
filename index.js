@@ -64,13 +64,11 @@ class BitcoinTrade {
 	}
 
 	getUserOrders(orderType) {
-		let status = 'status=executed_completely';
-		let type = `type=${orderType}`;
-		let intervalDate = `start_date=2018-01-01&end_date=${new Date().toISOString().substr(0, 10)}`;
+		let status = 'status=waiting';
 		let currency = 'currency=BTC';
 		let page_size = 'page_size=1000';
 		let current_page = 'current_page=1';
-		let url = `${URL_BASE}market/user_orders/list?${intervalDate}&${currency}&${page_size}&${current_page}`;
+		let url = `${URL_BASE}market/user_orders/list?${status}&${currency}&${page_size}&${current_page}`;
 		return new Promise((resolve, reject) => {
 			request.get(url, { headers: this.headers, json: true }).then(res => {
 				resolve(res.data);
