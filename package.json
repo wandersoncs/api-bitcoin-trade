@@ -1,6 +1,6 @@
 {
   "name": "api-bitcoin-trade",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Api to access BitcoinTrade and making orders of bitcoins",
   "main": "index.js",
   "scripts": {
