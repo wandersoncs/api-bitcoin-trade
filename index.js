@@ -84,8 +84,7 @@ class BitcoinTrade {
 		return this.createOrder(amount, unit_price, 'sell');
 	}
 
-	createOrderToBuy(amount_price, unit_price) {
-		let amount = Number(amount_price / unit_price).toFixed(8);
+	createOrderToBuy(amount, unit_price) {
 		return this.createOrder(amount, unit_price, 'buy');
 	}
 
@@ -109,7 +108,7 @@ class BitcoinTrade {
 
 	cancelOrder(id) {
 		let url = `${URL_BASE}market/user_orders/`;
-		return new Promise((rsolve, reject) => {
+		return new Promise((resolve, reject) => {
 			request.delete(url, { headers: this.headers, body: { id }, json: true }).then(res => {
 				resolve(res);
 			}).catch(err => {
