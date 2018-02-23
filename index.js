@@ -120,7 +120,7 @@ class BitcoinTrade {
 		let current_page = 'current_page=1';
 		let url = `${URL_BASE}public/BTC/trades?${page_size}&${current_page}`;
 		return new Promise((resolve, reject) => {
-			request.get(url, { headers: this.headers, json: true }).then(res => {
+			request.get(url, { json: true }).then(res => {
 				resolve(res.data);
 			}).catch(err => {
 				reject(err.error);
