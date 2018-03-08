@@ -12,8 +12,15 @@
     "trade",
     "api"
   ],
-  "author": "wanderson <wandersoncorreiasouza@gmail.com>",
-  "license": "ISC",
+  "author": {
+		"email": "wandersoncorreiasouza@gmail.com",
+		"name": "Wanderson Souza"
+	},
+	"license": "ISC",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/wandersoncs/api-bitcoin-trade"
+	},
   "dependencies": {
     "request": "^2.83.0",
     "request-promise-native": "^1.0.5"
