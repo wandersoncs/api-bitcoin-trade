@@ -1,6 +1,6 @@
 {
   "name": "api-bitcoin-trade",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Api to access BitcoinTrade and making orders of bitcoins",
   "main": "index.js",
   "scripts": {
@@ -13,14 +13,14 @@
     "api"
   ],
   "author": {
-		"email": "wandersoncorreiasouza@gmail.com",
-		"name": "Wanderson Souza"
-	},
-	"license": "ISC",
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/wandersoncs/api-bitcoin-trade"
-	},
+    "email": "wandersoncorreiasouza@gmail.com",
+    "name": "Wanderson Souza"
+  },
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wandersoncs/api-bitcoin-trade"
+  },
   "dependencies": {
     "request": "^2.83.0",
     "request-promise-native": "^1.0.5"
